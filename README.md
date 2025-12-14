@@ -1,9 +1,48 @@
-## Графики
+## Генерация данных  
+
+С помощью арифметической прогрессии для каждого n делаются два массива разной четности, равномерно распределенные
+
+---
+
+## Результаты по графикам
+
+### 1) ratio = 1
 
 ![ratio=1, repeats=50](plots/bench_ratio_1_rep_50.png)
 
+- two_pointer самый быстрый
+- среди остальных лучше всего binary_division
+- binary_search самый медленный
+
+---
+
+### 2) ratio = 10
+
 ![ratio=10, repeats=50](plots/bench_ratio_10_rep_50.png)
+
+- binary_division начинает выигрывать, особенно на больших n
+- exponential обычно второе место
+- two_pointers на последнем месте вместе с binary_search
+
+---
+
+### 3) ratio = 100
 
 ![ratio=100, repeats=50](plots/bench_ratio_100_rep_50.png)
 
+- two_pointers становится на порядок медленнее остальных (очень заметно)
+- binary_division лучший
+- binary_search и exponential примерно рядом
+
+---
+
+### 4) ratio = 1000
+
 ![ratio=1000, repeats=50](plots/bench_ratio_1000_rep_50.png)
+
+- two_pointers улетает вверх (очень медленно)
+- лучший — binary_division
+- binary_search и exponential остаются быстрыми, но хуже binary_division
+
+---
+
