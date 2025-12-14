@@ -46,3 +46,9 @@
 
 ---
 
+## Итог
+1. Если длины примерно одинаковые, то лучший выбор - two_pointers
+2. На больших ratio самый стабильный победитель - binary_division_method
+3. binary_search_method и exponential_method просты в реализации, подходят для больших ratio, но обычно уступают binary_division
+
+---
